@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice JS Day 1</title>
+</head>
+<body>
+    <h2>Practice JS Day 1</h2>
+
+    <h4>What are the differences between a variable that is: `null`, `undefined`?</h4>
+    <p>-- `null` is an <b>Object</b>  || `undefined` is a <b>datatype</b></p>
+    <h4>What is `use strict`? what are the advantages and disadvantages to using it?</h4>
+    <p>Strict mode throws more errors and disables some features to make your code more robust, readable, and accurate.</p>
+    <h4>What are the differences between `==` and `===`? Write an example for each case (if any)?</h4>
+    <p>`==` just compare value || `===` compare value and datatype</p>
+    <p>Example (11 == '11') => true || (11 === '11') => false</p>
+    <h4>Give a list of `Falsy` values in Javascript.</h4>
+    <p>`null`, `0`, `undefined`, `""`, `NaN`, `false`</p>
+    <h4>Give an example for each of the following methods in Javascript</h4>
+    <h5>+ map</h5>
+    <p>Example: <br>const nums= [1,2,3,4,5]<br> const evens= nums.map(num => num*2)<br>=>evens: [2,4,5,6,8,10]</p>
+    <h5>+ filter</h5>
+    <p>Example: <br>const nums= [1,2,3,4,5]<br> const evens= nums.filter(num => (num%2===0))<br>=>evens: [2,4]</p>
+    <h5>+ reduce</h5>
+    <p>Example: <br>const nums= [1,2,3,4,5]<br> const sum= nums.reduce((sum, curr) => sum+curr, 0)<br>=>sum = 15</p>
+    <h5>+ find</h5>
+    <p>Example: <br>const nums= [1,2,3,4,5]<br> const numGreaterThree= nums.find(num => n > 3)<br>=>numGreaterThree = 4</p>
+    <h5>+ some</h5>
+    <p>Example: <br>const nums= [1,2,3,4,5]<br> const isContainEven= nums.some(num => (n%2===0))<br>=>isContainEven = true</p>
+    <h5>- Give an example for add a new element to an array[] (at the end)</h5>
+    <p>Example: <br>const nums= [1,2,3,4,5]<br> nums.push(7)<br> nums: [1,2,3,4,5,7]</p>
+    <h5>- Give an example for add a new element to an array[] (at the beginning)</h5>
+    <p>Example: <br>const nums= [1,2,3,4,5]<br> nums.unshift(7)<br> nums: [7,1,2,3,4,5]</p>
+    <h5>- Give an example for removing an element in array[]</h5>
+    <p>Example: Remove last element of array<br>const nums= [1,2,3,4,5]<br> nums.pop()<br> nums: [1,2,3,4]<br></p>
+    <p>Example: Remove first element of array<br>const nums= [1,2,3,4,5]<br> nums.shift()<br> nums: [2,3,4,5]</p>
+    <p>Example: Remove element of array using position 0 with two element<br>const nums= [1,2,3,4,5]<br> nums.splice(0, 2)<br> nums: [3,4,5]</p>
+
+    <script src="./index.js"></script>
+</body>
+</html>
