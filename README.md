@@ -1,1 +1,1 @@
-- Front end practice JS
+- Demo call api using ajax and fetch
