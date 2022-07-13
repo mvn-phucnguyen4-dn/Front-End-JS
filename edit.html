@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/new.css">
+    <title>TravelCamp</title>
+</head>
+
+<body>
+    <header class="heading-page">
+        <nav>
+            <div class="container flex-wrap nav-bar">
+                <a href="/" class="logo">
+                    TravelCamp
+                </a>
+
+                <div class="nav-menu">
+                    <ul>
+                        <li><a href="./">Home</a></li>
+                        <li><a href="./index.html">Campgrounds</a></li>
+                        <li><a href="./new.html">New Campgrounds</a></li>
+                    </ul>
+                </div>
+                <div class="nav-action">
+                    <ul class="list-action">
+                        <li class="action-item"><a href="#"></a>Login</li>
+                        <li class="action-item"><a href="#"></a>Register</li>
+                        <!-- <li class="action-item"><a href="#"></a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-page">
+        <section class="new-campground">
+            <div class="container">
+                <h3 class="heading-title">New Campground</h3>
+                <form action="#">
+                    <div class="container-input">
+                        <label for="title">Title</label>
+                        <input type="text" id="title">
+                    </div>
+                    <div class="container-input">
+                        <label for="location">Location</label>
+                        <input type="text" id="location">
+                    </div>
+                    <div class="container-input">
+                        <label for="description">Description</label>
+                        <input type="text" id="description">
+                    </div>
+                    <div class="container-input">
+                        <label for="price">Price</label>
+                        <input type="number" id="price" min="0">
+                    </div>
+                    <div class="container-input">
+                        <label for="image">Image URL</label>
+                        <input type="text" id="image">
+                    </div>
+                    <button type="button" class="btn-submit">Update</button>
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-page">
+        <div class="container">
+            <span class="coppy-right">&copy;TravelCamp 2022</span>
+        </div>
+    </footer>
+    <script src="./js/edit.js"></script>
+    <!-- <script src="./seeds/cities.js"></script>
+    <script src="./seeds/descriptors.js"></script>
+    <script src="./seeds//campgrounds.js"></script>
+    <script src="./js//index.js"></script> -->
+</body>
+</html>

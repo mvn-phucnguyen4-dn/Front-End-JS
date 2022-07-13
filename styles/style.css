@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+/* Base */
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    color: #444;
+    background-color: white;
+    font-weight: 400;
+    color: #555252; 
+    font-family: 'Edu VIC WA NT Beginner', cursive;   
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    padding: 0 50px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* heading */
+.heading-page {
+   background-color: #fffffffe;
+   color: #333;
+}
+
+.nav-bar {
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+.nav-bar .logo {
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.nav-bar .nav-menu ul {
+    display: flex;
+}
+.nav-bar .nav-menu ul li {
+    padding: 5px;
+}
+.nav-bar .nav-action ul {
+    display: flex;
+}
+.nav-bar .nav-action ul li {
+    padding: 5px;
+}
+
+/* main */
+.main-page {
+    background-color: #edeee9fe;
+    padding: 50px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.slide-show {
+    margin-bottom: 50px;
+}
+.container-slide{
+    position: relative;
+    box-sizing: border-box;
+}
+.container-slide img{
+    width: 100%;
+}
+.container-slide .slideshow-btn-action{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+.slideshow-btn-action button{
+   border: none;
+   cursor: pointer; 
+   font-size: 24px;
+   color: #fff;
+   background-color: transparent;
+}
+
+.slideshow-btn-action button:hover{
+    color: #edeee9fe;
+
+}
+.container-slide .slideshow-btn-action .btn-prev {
+    position: absolute;
+    left: 30px;
+}
+.container-slide .slideshow-btn-action .btn-next {
+    position: absolute;
+    right: 30px;
+}
+
+.slideshow-content {
+    position: absolute;
+    top: 25%;
+    right: 15%;
+    text-align: center;
+}
+
+.slideshow-content h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+}
+.slideshow-content .slideshow-title::before, .slideshow-title::after{
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    content: "";
+    background-color: #fff;
+}
+.slideshow-content .slideshow-title::before{
+    left: 100px;
+    top: 15px;
+}
+.slideshow-content .slideshow-title::after{
+    left: -100px;
+    top: 15px;
+}
+.slideshow-content h1{
+    font-size: 75px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.slideshow-content p{
+    font-size: 1.2rem;
+    color: #fff;
+}
+.slideshow-content .btn-show-now a{
+    font-size: 16px;
+    line-height: 1;
+    display: inline-block;
+    padding: 19px 50px 21px;
+    text-transform: uppercase;
+    border: 1px solid #333;
+    margin-top: 50px;
+}
+.slideshow-content .btn-show-now a:hover{
+    background-color: #edeee9fe;
+    color: #444;
+    transition: 0.3s;
+}
+
+.search-container {
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+.search-container > input {
+    width: 30%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.search-container select {
+    padding: 10px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.search-container .btn-submit {
+    padding: 10px 20px;
+}
+/* list campground */
+.campground .heading-title {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.list-campground .card-campground{
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #555252;
+    border-radius: 10px;
+}
+.list-campground .card-campground .slider{
+    width: 25%;
+}
+.list-campground .card-campground img{
+    width: 100%;
+}
+.list-campground .card-campground .content {
+    padding: 0 20px;
+    width: 75%;
+}
+.card-campground .content .location {
+    font-style: italic;
+    letter-spacing: .3;
+    font-size: 14px;
+    padding: 3px;
+}
+.card-campground .content .description {
+    margin-bottom: 5px;
+}
+.card-campground .content .price{
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .4;
+    border: 1px solid #555252;
+    border-radius: 3px;
+    padding: 3px 10px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.btn {
+    background-color: transparent;
+    padding: 3px 10px;
+    border-radius: 7px;
+    font-weight: 500;
+}
+.btn-delete {
+    border: 1px solid red;
+}
+.btn-edit {
+    border: 1px solid #34c9eb;
+}
+.btn:hover {
+    background-color: #555252;
+    color: white;
+    transition: 0.5s all;
+}
+/* footer */
+.footer-page {
+    background-color: #555252;
+    padding: 30px;
+    color: #fff;
+}
