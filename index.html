@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles//slide.css">
+    <title>TravelCamp</title>
+</head>
+
+<body>
+    <header class="heading-page">
+        <nav>
+            <div class="container flex-wrap nav-bar">
+                <a href="./index.html" class="logo">
+                    TravelCamp
+                </a>
+
+                <div class="nav-menu">
+                    <ul>
+                        <li><a href="./">Home</a></li>
+                        <li><a href="./index.html">Campgrounds</a></li>
+                        <li><a href="./new.html">New Campgrounds</a></li>
+                    </ul>
+                </div>
+                <div class="nav-action">
+                    <ul class="list-action">
+                        <li class="action-item"><a href="#"></a>Login</li>
+                        <li class="action-item"><a href="#"></a>Register</li>
+                        <!-- <li class="action-item"><a href="#"></a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-page">
+        <section class="slide-show">
+            <div class="container-slide">
+                <ul class="slider-track">
+                    <li class="slide fade"><img src="./images/slide-2.jpg" alt="slide"></li>
+                    <li class="slide fade"><img src="./images/slide-1.jpg" alt="slide"></li>
+                    <li class="slide fade"><img src="https://res.cloudinary.com/duy-t-n/image/upload/v1638868069/YelpCamp/pexels-xue-guangjian-1687845_lp7zty.jpg" alt="slide"></li>
+                </ul>
+                <div class="slideshow-btn-action">
+                    <button class="btn-prev" onclick="plusSlides(-1)"><i class="fas fa-chevron-left"></i></button>
+                    <button class="btn-next" onclick="plusSlides(1)"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="slideshow-content">
+                    <h3 class="slideshow-title">Hello Guy!</h3>
+                    <h1>Campgrounds</h1>
+                    <p>30% of Summer Vacation</p>
+                    <p class="btn-show-now"><a href="#">EXPLORE NOW</a></p>
+                </div>
+            </div>
+        </section>
+        <section class="campground">
+            <h3 class="heading-title">List campgrounds</h3>
+            <div class="container search-container flex-wrap">
+                <div class="sort">
+                    <label for="sort">Sort</label>
+                    <select name="Sort" id="sort">
+                        <option value="none">None</option>
+                        <option value="price-in">Price - Increase</option>
+                        <option value="price-de">Price - Descrease</option>
+                        <option value="newest">Created At Newest</option>
+                        <option value="oldest">Create At Oldest</option>
+                    </select>
+                </div>
+                <input type="text" placeholder="Find campground(by title, location)..." id="search-input">
+                <button class="btn btn-submit">Search</button>
+            </div>
+            <div class="list-campground container">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-page">
+        <div class="container">
+            <span class="coppy-right">&copy;TravelCamp 2022</span>
+        </div>
+    </footer>
+    <script src="./seeds/cities.js"></script>
+    <script src="./seeds/descriptors.js"></script>
+    <script src="./seeds//campgrounds.js"></script>
+    <script src="./js//index.js"></script>
+    <script src="./js/slide.js"></script>
+</body>
+</html>
