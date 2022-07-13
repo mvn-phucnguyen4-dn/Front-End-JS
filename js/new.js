@@ -9,16 +9,16 @@ const id = Date.now();
 const campgrounds = localStorage.getItem('campgrounds') ? JSON.parse(localStorage.getItem('campgrounds')) : [];
 
 btnSubmit.addEventListener('click', () => {
-    const campground = {
+    const newCampground = {
         id : id,
         location : myLocation.value,
         title : title.value,
         description: description.value,
         price: parseInt(price.value),
-        image: 'https://res.cloudinary.com/duy-t-n/image/upload/v1638868069/YelpCamp/pexels-xue-guangjian-1687845_lp7zty.jpg',
+        image: image.value,
         createdAt: Date.now()
     }
-    campgrounds.push(campground);
+    campgrounds.push(newCampground);
     localStorage.setItem('campgrounds', JSON.stringify(campgrounds));
     window.location = 'http://127.0.0.1:5501/index.html'
 })
