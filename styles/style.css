@@ -235,22 +235,32 @@ a {
     border-radius: 3px;
     padding: 3px 10px;
     display: inline-block;
-    margin-bottom: 5px;
+    margin-bottom: 5px; 
+    margin-right: 5px;
 }
 .btn {
     background-color: transparent;
-    padding: 3px 10px;
+    padding: 5px 10px;
     border-radius: 7px;
-    font-weight: 500;
+    font-weight: 600;
+    color: #444;
+    font-size: 16px;
 }
 .btn-delete {
     border: 1px solid red;
 }
+.btn-delete:hover {
+    background-color: red;
+    border: 1px solid #333;
+    color: white;
+    transition: 0.5s all;
+}
 .btn-edit {
     border: 1px solid #34c9eb;
 }
-.btn:hover {
-    background-color: #555252;
+.btn-edit:hover {
+    background-color: #34c9eb;
+    border: 1px solid #333;
     color: white;
     transition: 0.5s all;
 }
@@ -259,4 +269,166 @@ a {
     background-color: #555252;
     padding: 30px;
     color: #fff;
+}
+
+@media only screen and (max-width: 767px) {
+    .search-container > input {
+        width: 30%;
+        padding: 7px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+    .search-container select {
+        padding: 7px 15px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    .search-container .btn-submit {
+        padding: 5px 20px;
+    }
+    .card-campground .content .description {
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+    .nav-bar .nav-action {
+        display: none;
+    }
+ 
+    .slideshow-btn-action button{
+       font-size: 20px;
+    }
+    
+    .slideshow-content {
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+
+        text-align: center;
+    }
+    
+    .slideshow-content h3{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .slideshow-content .slideshow-title::before, .slideshow-title::after{
+        position: absolute;
+        width: 60px;
+        height: 2px;
+        content: "";
+        background-color: #fff;
+    }
+    .slideshow-content .slideshow-title::before{
+        left: 100px;
+        top: 10px;
+    }
+    .slideshow-content .slideshow-title::after{
+        left: -100px;
+        top: 10px;
+    }
+    .slideshow-content h1{
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+    .slideshow-content p{
+        font-size: 14px;
+        color: #fff;
+    }
+    .slideshow-content .btn-show-now a{
+        font-size: 14px;
+        padding: 15px 40px 21px;
+        margin-top: 40px;
+    }
+    .slideshow-content .btn-show-now a:hover{
+        background-color: #edeee9fe;
+        color: #444;
+        transition: 0.3s;
+    }
+
+    .search-container {
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20px;
+    }
+    .search-container > input {
+       width: 100%;
+    }
+    .search-container {
+        align-items: center;
+        justify-content: center;
+    }
+    .sort {
+        width: 100%;
+    }
+    .sort select {
+        padding: 7px 15px;
+        margin: 5px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    .search-container .btn-submit {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 479px) { 
+    .list-campground .card-campground{
+        padding: 10px;
+    }
+    .list-campground .card-campground .slider{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .list-campground .card-campground .content {
+        padding: 0 10px;
+        width: 100%;
+    }
+    .card-campground .content .location {
+        font-style: italic;
+        letter-spacing: .3;
+        font-size: 14px;
+        padding: 3px;
+    }
+    .card-campground .content .description {
+        margin-bottom: 5px;
+    }
+    .card-campground .content .price{
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: .4;
+        border: 1px solid #555252;
+        border-radius: 3px;
+        padding: 3px 10px;
+        display: inline-block;
+        margin-bottom: 5px; 
+        margin-right: 5px;
+    }
+    .btn {
+        background-color: transparent;
+        padding: 5px 10px;
+        border-radius: 7px;
+        font-weight: 600;
+        color: #444;
+        font-size: 16px;
+    }
+    .btn-delete {
+        border: 1px solid red;
+    }
+    .btn-delete:hover {
+        background-color: red;
+        border: 1px solid #333;
+        color: white;
+        transition: 0.5s all;
+    }
 }
